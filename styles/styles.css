@@ -6,6 +6,8 @@ main img {
   float: right;
 }
 
+/* Class Selectors */
+
 aside {
   width: 20rem;
   margin: 1rem;
