@@ -1,3 +1,4 @@
+/* Reglas CSS originales */
 main {
   max-width: 840px;
 }
@@ -18,11 +19,6 @@ aside {
 
 aside img {
   width: 200px;
-  height: auto;
-}
-
-main img {
-  width: 150px;
   height: auto;
 }
 
@@ -70,4 +66,17 @@ img {
   padding: 1rem;
   background-color: #ddd;
   color: #000;
+}
+
+
+aside {
+  position: relative; 
+}
+
+aside h2 {
+  position: absolute; 
+  top: 47px; 
+  left: 150px; 
+  background-color: rgba(255, 255, 255, 0.7); 
+  padding: 10px; 
 }
