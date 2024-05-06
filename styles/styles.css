@@ -59,15 +59,12 @@ img {
   box-shadow: 0 0 30px gray;
 }
 
-/* New CSS rules based on instructions */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Class Selectors */
 .box {
   margin: 1rem;
   padding: 1rem;
