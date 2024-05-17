@@ -31,6 +31,38 @@ body {
     margin: 0 auto;
 }
 
+/* Header styles using CSS Grid */
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 10px 0;
+    background-color: var(--quaternary-color);
+}
+
+/* Style for the logo */
+header img {
+    max-height: 50px;
+    margin-right: 20px;
+}
+
+/* Style for the navigation using Flexbox */
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
 /* Style the Hero Container */
 .hero {
     position: relative;
@@ -67,4 +99,3 @@ body {
     float: right;
     margin-left: 20px;
 }
-
