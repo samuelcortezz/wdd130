@@ -99,3 +99,21 @@ header nav a:hover {
     float: right;
     margin-left: 20px;
 }
+
+/* Style the History section */
+.history {
+    margin: 20px 0;
+}
+
+.history .content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--secondary-color);
+}
