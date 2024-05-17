@@ -119,7 +119,7 @@ header nav a:hover {
 }
 
 .history .content p {
-    flex: 1 1 300px; /* Adjust the flex properties as needed */
+    flex: 1 1 300px; 
     text-align: justify;
 }
 
