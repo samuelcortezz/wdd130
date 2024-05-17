@@ -124,7 +124,7 @@ header nav a:hover {
 }
 
 .history .content img {
-    max-width: 100%;
+    max-width: 15%;
     height: auto;
     border: 5px solid var(--secondary-color);
     flex: 0 1 400px; /* Adjust the flex properties as needed */
