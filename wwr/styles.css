@@ -157,3 +157,22 @@ header nav a:hover {
     font-family: 'Sedan CS', sans-serif;
     color: var(--secondary-color);
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: var(--quinary-color);
+    color: var(--tertiary-color);
+}
+
+footer .sociallinks {
+    display: flex;
+    gap: 10px;
+}
+
+footer .sociallinks img {
+    width: 30px;
+    height: 30px;
+}
