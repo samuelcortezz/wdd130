@@ -127,7 +127,7 @@ header nav a:hover {
     max-width: 15%;
     height: auto;
     border: 5px solid var(--secondary-color);
-    flex: 0 1 400px; /* Adjust the flex properties as needed */
+    flex: 0 1 400px; 
 }
 
 .adventures {
@@ -136,9 +136,8 @@ header nav a:hover {
 
 .adventure-gallery {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between; 
 }
 
 .adventure-gallery figure {
@@ -147,7 +146,7 @@ header nav a:hover {
 }
 
 .adventure-gallery img {
-    max-width: 50%;
+    max-width: 80%;
     height: auto;
     border: 5px solid var(--secondary-color);
 }
