@@ -117,3 +117,30 @@ header nav a:hover {
     height: auto;
     border: 5px solid var(--secondary-color);
 }
+.adventures {
+    margin: 20px 0;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--secondary-color);
+}
+
+.adventure-gallery figcaption {
+    margin-top: 10px;
+    font-family: 'Sedan CS', sans-serif;
+    color: var(--secondary-color);
+}
