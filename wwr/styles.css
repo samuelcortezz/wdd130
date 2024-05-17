@@ -147,7 +147,7 @@ header nav a:hover {
 }
 
 .adventure-gallery img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     border: 5px solid var(--secondary-color);
 }
