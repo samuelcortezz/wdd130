@@ -3,8 +3,8 @@
 /* Define CSS variables */
 :root {
     --primary-color: #FF6700;
-    --secondary-color: #EBEBEB;
-    --tertiary-color: #C0C0C0;
+    --secondary-color: #7c7c7c;
+    --tertiary-color: #ffffff;
     --quaternary-color: #3A6EA5;
     --quinary-color: #004E98;
 }
@@ -29,6 +29,38 @@ footer .sociallinks a {
 body {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Header styles using CSS Grid */
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 10px 0;
+    background-color: var(--quaternary-color);
+}
+
+/* Style for the logo */
+header img {
+    max-height: 125px;
+    margin-right: 20px;
+}
+
+/* Style for the navigation using Flexbox */
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
 }
 
 /* Style the Hero Container */
@@ -68,3 +100,78 @@ body {
     margin-left: 20px;
 }
 
+/* Style the History section */
+.history {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.history h2 {
+    margin-bottom: 20px;
+}
+
+.history .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.history .content p {
+    flex: 1 1 300px; 
+    text-align: justify;
+}
+
+.history .content img {
+    max-width: 15%;
+    height: auto;
+    border: 5px solid var(--secondary-color);
+    flex: 0 1 400px; 
+}
+
+.adventures {
+    margin: 20px 0;
+}
+
+.adventure-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.adventure-gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    max-width: 80%;
+    height: auto;
+    border: 5px solid var(--secondary-color);
+}
+
+.adventure-gallery figcaption {
+    margin-top: 10px;
+    font-family: 'Sedan CS', sans-serif;
+    color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: var(--quinary-color);
+    color: var(--tertiary-color);
+}
+
+footer .sociallinks {
+    display: flex;
+    gap: 10px;
+}
+
+footer .sociallinks img {
+    width: 30px;
+    height: 30px;
+}
