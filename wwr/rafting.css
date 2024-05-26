@@ -1,5 +1,35 @@
 /* rafting.css */
 
+main {
+    max-width: 840px;
+  }
+  
+  main img {
+    float: right;
+  }
+  
+  /* Class Selectors */
+  
+  aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+  }
+  
+  aside img {
+    width: 200px;
+    height: auto;
+  }
+  
+  p {
+    padding: 0;
+  }
+  
+
 /* Company Info Section */
 .company-info {
     margin: 20px;
