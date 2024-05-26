@@ -1,0 +1,73 @@
+/* rafting.css */
+
+/* Company Info Section */
+.company-info {
+    margin: 20px;
+}
+
+.company-info h2 {
+    font-size: 1.5em;
+}
+
+.company-info p {
+    margin: 10px 0;
+}
+
+/* Google Map */
+.company-info iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* Employees Section */
+.employees {
+    margin: 20px;
+}
+
+.employee {
+    margin-bottom: 20px;
+}
+
+.employee img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.employee p {
+    font-size: 1.1em;
+}
+
+/* Contact Form Section */
+.contact-form {
+    margin: 20px;
+}
+
+.contact-form h2 {
+    font-size: 1.5em;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
