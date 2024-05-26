@@ -1,5 +1,4 @@
 /* rafting.css */
-
 main {
     max-width: 840px;
   }
@@ -28,6 +27,49 @@ main {
   p {
     padding: 0;
   }
+  
+  footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: steelblue;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: steelblue;
+  }
+  
+  img {
+    width: 200px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* new box */
+  .box {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000000;
+  }
+  
   
 
 /* Company Info Section */
