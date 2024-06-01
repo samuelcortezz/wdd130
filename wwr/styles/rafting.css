@@ -1,146 +1,206 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* rafting.css */
-main {
-    max-width: 840px;
-  }
-  
-  main img {
-    float: right;
-  }
-  
-  /* Class Selectors */
-  
-  aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-  }
-  
-  aside img {
-    width: 200px;
-    height: auto;
-  }
-  
-  p {
-    padding: 0;
-  }
-  
-  footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-  }
-  
-  nav {
-    background-color: steelblue;
-    padding: 10px;
-  }
-  
-  nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-  }
-  
-  h1 {
-    color: steelblue;
-  }
-  
-  img {
-    width: 200px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  /* new box */
-  .box {
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000000;
-  }
-  
-  
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header img {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
 
 /* Company Info Section */
 .company-info {
-    margin: 20px;
+  margin: 20px;
 }
 
 .company-info h2 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .company-info p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 /* Google Map */
 .company-info iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
+  width: 100%;
+  height: 450px;
+  border: 0;
 }
 
 /* Employees Section */
 .employees {
-    margin: 20px;
+  margin: 20px;
 }
 
 .employee {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .employee img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 .employee p {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 /* Contact Form Section */
 .contact-form {
-    margin: 20px;
+  margin: 20px;
 }
 
 .contact-form h2 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .contact-form label {
-    display: block;
-    margin-top: 10px;
+  display: block;
+  margin-top: 10px;
 }
 
 .contact-form input,
 .contact-form textarea,
 .contact-form button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
 }
 
 .contact-form button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .contact-form button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer .sociallinks {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+footer .sociallinks a {
+  margin: 0 10px;
+}
+
+footer .sociallinks img {
+  width: 30px;
+  height: 30px;
+}
+
+/* General Box Styles */
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+
+/* Utility Classes */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.float-right {
+  float: right;
+}
+
+/* General Image Styles */
+img {
+  border: 1px solid steelblue;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav a {
+      margin: 5px 0;
+  }
+
+  .hero h1 {
+      font-size: 2em;
+      padding: 5px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+      padding: 5px;
+  }
 }
